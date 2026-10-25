@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Avito Cleaner: Reserved Ads",
+  "version": "1.0.0",
+  "description": "Фильтр забронированных объявлений на Авито",
+  "permissions": ["storage"],
+  "host_permissions": ["https://*.avito.ru/*"],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.avito.ru/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Avito Cleaner: Reserved Ads",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  }
+}
